@@ -1,0 +1,31 @@
+/* 별점 컨테이너 */
+.star-rating {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 0;
+}
+
+/* 별 버튼 스타일 */
+.star-rating__button {
+  font-size: 24.5px;
+  color: rgba(124, 113, 99, 0.4);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* 활성화된 별 */
+.star-rating__button.active {
+  color: #FFE871;
+}
+
+/* 마우스 오버 효과 */
+.star-rating__button:hover {
+  color: #FFE871
+}

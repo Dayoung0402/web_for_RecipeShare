@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'SolmoeKimDaeGeon';
+    src: url('../../assets/fonts/SolmoeKimDaeGeon-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.board-list-item {
+    width: 300px;
+    height: 555px;
+    /*border: 1px, solid, #F2EBE2; 나중에 없앨것임*/
+    margin-top: 200px;
+    margin-left:25px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.recipe-image {
+    width: 100%; /* 부모 컨테이너 너비에 맞춤 */
+    height: 400px; /* 고정된 높이 */
+    display: flex;
+    align-items: center; /* 수직 정렬 */
+    justify-content: center; /* 수평 정렬 */
+    overflow: hidden; /* 이미지가 영역을 넘어가면 숨김 */
+    background-color: #f8f8f8; /* 이미지 없는 경우 배경색 추가 (선택 사항) */
+    position: relative; 
+}
+
+.recipe-image img {
+    position: absolute; /* 부모 요소에 절대적으로 위치 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 부모의 가로 크기에 맞춤 */
+    height: 100%; /* 부모의 세로 크기에 맞춤 */
+    object-fit: cover; /* 비율을 유지하며 부모 크기에 맞게 채움 */
+}
+
+.favorite-count {
+    font-family:'SolmoeKimDaeGeon';
+    font-size:20px;
+    color:#7C7163;
+    margin-top: 22px;
+}
+
+.star-ratings {
+    margin-left:54px;
+    margin-top: -23px;
+    width: 140px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .star-ratings img {
+    width:90%; /*별 크기 조정*/
+
+  }
+   
+.price {
+    font-family:'SolmoeKimDaeGeon';
+    font-size:15px;
+    font-weight: 50;
+    color: #7C7163;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40px;
+    margin-right: 8px;
+    
+}
+
+.line {
+    color:#7C7163;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.title {
+    font-family:'SolmoeKimDaeGeon';
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    color: #7C7163;
+    margin-top:10px;
+    margin-right: 4px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.recipe-card {
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    opacity: 0.4;
+}

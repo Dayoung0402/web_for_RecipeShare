@@ -1,0 +1,76 @@
+#main-top-wrapper {
+    padding: 45px 0px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main-top-container {
+    width: 1200px;
+    min-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-bottom-wrapper {
+    padding: 20px 0px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main-bottom-container {
+    width: 1200px;
+    min-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-bottom-contents-title {
+    font-family: 'Solmoe KimDaeGeon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+
+    color: #3E2E22;
+
+    text-align: center;
+    white-space: pre-wrap;
+    left: 50%;
+    transform: translateX(21%); 
+    margin-top: -65px;
+
+    display: flex;
+    align-items: center;
+}
+
+.main-bottom-contents-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+}
+
+.main-bottom-contents {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    left: 50%;
+    transform: translateX(3%); 
+    margin-top: -15px;
+}
+
+.today-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -12px;
+    margin-left: 53px;
+}

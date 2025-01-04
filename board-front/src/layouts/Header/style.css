@@ -1,0 +1,116 @@
+#header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1409px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header-middle-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.recipe-board, .free-board {
+    cursor: pointer;
+    color: #3E2E22;
+}
+  
+.recipe-board:hover, .free-board:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.short {
+    width: 1px;
+    height: 20px;
+    background-color: #000000;
+}
+
+.title-main {
+    font-family: 'Solmoe KimDaeGeon';
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 74px;
+    background: linear-gradient(90.97deg, rgba(62, 46, 34, 1) 1.71%, rgba(0, 0, 0, 1) 63.77%), #3E2E22;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(15%);
+}
+
+.title-others {
+    font-family: 'Solmoe KimDaeGeon';
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 74px;
+    background: linear-gradient(90.97deg, rgba(62, 46, 34, 1) 1.71%, rgba(0, 0, 0, 1) 63.77%), #3E2E22;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: -38px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(23%);
+    margin-top: -38px;
+}
+
+.header-line {
+    width: 100%;
+    max-width: 1000px;
+    border: 0.7px solid #3E2E22;
+    margin-top: 30px;
+    position: fixed;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.recipe-board-title, .web-board-title {
+    font-family: 'Solmoe KimDaeGeon';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 74px;
+    background: linear-gradient(90.97deg, rgba(62, 46, 34, 1) 1.71%, rgba(0, 0, 0, 1) 63.77%), #3E2E22;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(15%);
+}
+
+.recipe-write-title, .board-write-title {
+    
+    font-family: 'Solmoe KimDaeGeon';
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 74px;
+    background: linear-gradient(90.97deg, rgba(62, 46, 34, 1) 1.71%, rgba(0, 0, 0, 1) 63.77%), #3E2E22;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
+    left: -405px;
+    transform: translateX(0);
+    margin-top: -30px;
+}
+

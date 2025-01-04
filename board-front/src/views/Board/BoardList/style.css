@@ -1,0 +1,9 @@
+.freedom {
+    background-image: url(assets/images/freedom.png);
+    width: 1003px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 3.2%;
+  }

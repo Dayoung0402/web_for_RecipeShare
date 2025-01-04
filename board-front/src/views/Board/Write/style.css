@@ -1,0 +1,4 @@
+.list-board-write-container {
+  display: flex;
+  flex-direction: column;
+}

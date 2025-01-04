@@ -1,0 +1,24 @@
+#sider {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 100vh;
+}
+
+.left-slider {
+    width: 135px;
+    height: 100%;
+    background-color: #F2EBE2;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.right-slider {
+    width: 135px;
+    height: 100%;
+    background-color: #F2EBE2;
+    position: fixed;
+    right: 0;
+    top: 0;
+}

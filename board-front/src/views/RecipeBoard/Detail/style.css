@@ -1,0 +1,278 @@
+#board-detail-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;/* 화면 전체 높이 기준으로 설정 */
+    overflow: hidden; /* 필요 시 자식이 넘치지 않도록 제한 */
+}
+
+.board-detail-container {
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: calc(100vh - 250px); /* 부모 높이 제한 */
+    overflow-y: auto; /* 자식 요소가 넘칠 경우 스크롤 가능 */
+    margin-left: 57px;
+}
+
+#recipe-board-detail-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-board-info-box {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 10px;
+}
+
+.recipe-board-info-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe-user-info-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    position: relative; /* 캘린더 박스의 기준점 설정 */
+    width: 100%;
+}
+
+.user-name-box {
+    font-family: 'Solmoe KimDaeGeon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 38px;
+
+    color: #3E2E22;
+}
+
+.recipe-user-calender-box {
+    color: #929191;
+    font-size: 13px;
+    position: absolute; /* 부모 기준으로 고정 위치 설정 */
+    top: 23.5%; /* 부모 요소의 상단에 고정 */
+    right: 16.8%; /* 부모 요소의 오른쪽에 고정 */
+}
+
+.recipe-board-detail-box {
+    border: 1px solid #3E2E22;
+    width: 100%;
+    position: relative;
+    height: auto; /* 명시적으로 높이 지정 */
+    overflow-y: auto;
+    padding: 60px 30px;
+}
+
+.recipe-detail-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    font-size: 13px;
+    color:#7C7163;
+    border: 1px solid #7C7163;
+    width: 156px;
+    padding: 6px;
+    font-weight: 400;
+    margin-top: -48px;
+    margin-bottom: 13px;
+    position: relative;
+    left: 85%;
+    
+}
+
+.correct-button, .delete-button {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.correct-button:hover, .delete-button:hover {
+    opacity: 0.6;
+}
+
+.recipe-detail-box-header, .recipe-detail-box-content {
+    display: flex; /* 플렉스 컨테이너로 설정 */
+    flex-direction: column; /* 세로 정렬 */
+    text-align: center; /* 텍스트 내부 정렬 */
+    font-family: 'Solmoe KimDaeGeon';
+
+}
+
+.recipe-detail-box-title{
+    font-size: 35px;
+    color:#3E2E22;
+    margin-bottom: 5px;
+}
+
+.recipe-detail-box-title-content {
+    font-size: 17px;
+    color: #7C7163;
+    text-decoration: underline #7C7163;
+    margin-bottom: 40px;
+}
+
+.recipe-detail-box-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-detail-box-write-content {
+    font-size: 18px;   
+    white-space: pre-wrap; /*줄바꿈 처리 */
+}
+
+.recipe-detail-box-image-box {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#recipe-board-detail-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-board-write-comment-box{
+    background-color: rgba(124, 113, 99, 0.15);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 20px 40px;
+    width: 100%;
+    height: 227px;
+    margin-bottom: 50px;
+}
+
+.recipe-board-rating-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: -10px;
+}
+
+.rate-content {
+    font-size: 17px;
+    font-family: 'Solmoe KimDaeGeon';
+    margin-top: -30px;
+}
+
+.comment-input-profile-box {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.input-rate-star-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    border: 0.8px solid #7C7163;
+    background-color: #fff;
+    width: 225px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    left: 75.1%;
+    margin-bottom: 10px;
+}
+
+.input-rate-star-title {
+    font-family: 'Solmoe KimDaeGeon';
+    font-size: 16px;
+    color: #7C7163;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.recipe-board-comment-textare{
+    width: 100%;
+    height: 100px;
+    flex: 1;
+    border: 0.8px solid #7C7163;
+    outline: none;
+    background: #fff;
+    resize: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+
+.comment-complete-button-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    border: 0.8px solid #7C7163;
+    background-color: #fff;
+    padding: 5px 10px;
+    width: 110px;
+    margin-top: 7px;
+    position: relative;
+    left: 87.8%;
+    cursor: pointer;
+}
+
+.comment-complete-button-box:hover {
+    opacity: 0.7;
+}
+
+.comment-complete-title {
+    font-family: 'Solmoe KimDaeGeon';
+    font-size: 16px;
+    color: #7C7163;
+
+}
+
+.recipe-board-view-comment-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4px;
+}
+
+.recipe-board-comment-title {
+    font-family: 'Solmoe KimDaeGeon';
+    font-size: 20px;
+    color: #3E2E22;
+    margin-bottom: 19px;
+}
+
+
+.recipe-board-comment-list-container {
+    font-family: 'Solmoe KimDaeGeon';
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.comment-dotted-line{
+    border: 0.8px dotted #3E2E22;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.person-name{
+    margin-left: -7px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #3E2E22;
+}
+
+.comment-content {
+    font-size: 16px;
+    font-weight: 400;
+}

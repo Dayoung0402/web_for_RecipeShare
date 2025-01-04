@@ -1,0 +1,49 @@
+.inputbox {
+    display: felx;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 30px;
+    
+}
+
+.inputbox-label {
+    color:#3E2E22;
+    font-size: 20px;
+    font-family: 'SolmoeKimDaeGeon';
+    margin-bottom: 15px;
+}
+
+.inputbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 아이콘과 입력 필드 사이 간격 추가 */
+}
+
+.inputbox-message {
+    color:blue;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.input {
+    padding: 10px 100px 10px 10px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    outline: none;
+}
+
+.input:focus {
+    background-color: #ffffff; /* 포커스 시 배경색 변경 */
+    border-color: #a1a1a1;
+    
+}
+
+.icon {
+    width: 23px; /* 아이콘의 너비 */
+    height: 23px; /* 아이콘의 높이 */
+    cursor: pointer; /* 클릭 가능 아이콘 스타일 */
+    margin-bottom: 17px;
+}

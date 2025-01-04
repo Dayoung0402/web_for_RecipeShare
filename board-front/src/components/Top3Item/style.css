@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-3-list-item {
+    /*padding: 42px;*/
+    width: 280px;
+    height: 180px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-3-list-item:hover {
+    opacity: 0.7;
+}
+
+.top-3-list-item-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 */
+}
+
+.top-3-list-item-box-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.top-3-list-item-image {
+    width: 230px; /* 이미지 컨테이너 너비 */
+    height: 230px; /* 이미지 컨테이너 높이 */
+    background-size: cover; /* 이미지를 컨테이너에 꽉 채우되 비율 유지 */
+    background-position: center; /* 이미지를 가운데 정렬 */
+    background-repeat: no-repeat; /* 이미지 반복 제거 */
+    overflow: hidden; /* 이미지가 영역을 넘지 않도록 */
+}
+
+.top-3-list-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 부모 요소에 맞게 조정되도록 설정 */
+}
+
+.top-3-list-item-name {
+    font-family: 'SolmoeKimDaeGeon';
+    font-size: 23px;
+    font-weight: 500;
+    color: #3E2E22;
+    margin: 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+.top-3-list-item-box-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 추가 */
+    width: 100%; /* 점선과 내용이 전체 너비를 차지하도록 설정 */
+}
+
+.top3-dotted-line {
+    border-top: 2px dotted #3E2E22;
+    width: 100%; /* 부모 컨테이너의 너비를 가득 채우도록 설정 */
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.top-3-list-item-content {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #000;
+    margin-top: 8px;
+    text-align: center;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px; /* 텍스트 너비 제한 */
+}
